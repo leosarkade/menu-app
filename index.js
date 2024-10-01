@@ -19,7 +19,7 @@ let orderComplete = false
 
 menuSection.addEventListener('click',function(e){
 
-    if(e.target.classList[0] === ('add-item-btn') && !orderComplete){
+    if(e.target.classList[0] === ('add-item-btn') && !orderComplete && cardDetailsContainer.classList.contains('hidden')){
         addItem(e.target.name)
         if(orderSection.classList.contains('hidden')){
         orderSection.classList.toggle('hidden') 
@@ -30,13 +30,13 @@ menuSection.addEventListener('click',function(e){
 
 orderSection.addEventListener('click',function(e){
 
-    if(e.target.classList[0] === 'remove-item-btn' && !orderComplete){
+    if(e.target.classList[0] === 'remove-item-btn' && !orderComplete && cardDetailsContainer.classList.contains('hidden')){
         removeItem(e.target.parentElement.id)
         if(orderItemsArr.length === 0){
             orderSection.classList.toggle('hidden')    
         }
     } 
-    else if(e.target.id === 'complete-btn' && !orderComplete){
+    else if(e.target.id === 'complete-btn' && !orderComplete && cardDetailsContainer.classList.contains('hidden')){
         cardDetailsContainer.classList.toggle('hidden') 
     }
 })
