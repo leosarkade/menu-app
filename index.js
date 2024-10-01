@@ -50,7 +50,6 @@ cardDetailsContainer.addEventListener('click', function(e){
 })
 
 orderForm.addEventListener('submit', function(e){
-
     e.preventDefault()
     if(e.target.id === 'order-form'){
         cardDetailsContainer.classList.toggle('hidden') 
@@ -123,7 +122,7 @@ const getMenuHtml = () =>{
                     <h2>${item.name}</h2>
                     <input type="button" class="remove-item-btn" value="remove"></input>
                 </div>
-                <h3>${item.price}</h3>
+                <h3>$${item.price}</h3>
             </li>
             `
     })

@@ -8,8 +8,8 @@
     <body>
         <header>
             <container class="header-text">
-                <h1>Jimmy's Diner</h1>
-                <h2>The best burgers and pizzas in town</h2>
+                <h1>Leo's Burgers</h1>
+                <h2>The best burgers and pizzas in this cafe</h2>
             </container>
         </header>
         <main id="main">
@@ -46,14 +46,16 @@
                             pattern="[A-Za-z]{3,30}"
                             required></input>
                         <input 
-                            type="number" 
+                            type="text" 
                             placeholder="Enter card number"
                             name='customerCardNumber'
+                            pattern="[0-9]{16}"
                             required></input>
                         <input 
-                            type="number"
+                            type="text"
                             placeholder="Enter CVV"
                             name='customerCVV'
+                            pattern="[0-9]{3}"
                             required></input>
                         <button
                             type="submit"
