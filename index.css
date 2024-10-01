@@ -1,0 +1,193 @@
+/* Typography */
+
+h1 {
+    margin:0;
+    font-size: 42px;
+}
+
+h2 {
+    margin:0;
+    font-size: 24px;
+}
+
+h3 {
+    margin:0;
+    font-size: 20px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #8B8B8B;
+    font-size: 16px;
+}
+
+
+h1, h2, h3, p {
+    font-weight: 400;
+}
+
+.card-details-container h2 {
+    font-family: system-ui;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Layout */
+
+body {
+    margin: 0 auto;
+    width: 600px;  
+    font-family: 'Smythe', system-ui;  
+
+} 
+
+header {
+    height: 167px;
+    background-image: url('./images/burger.jpg');
+    background-position: 0 -150px;
+    background-size:cover;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.header-text {
+    margin-left: 40px;
+}
+
+main {
+    margin: 40px;    
+}
+
+.card-details-container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: fit-content;
+    background: white;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    box-shadow: 0px 0px 80px 10px rgba(0,0,0,.2);
+}
+
+.card-details-header {
+    text-align: center;
+    padding: 40px;
+}
+
+.card-details-container input{
+    margin-bottom: 20px;
+    padding:  10px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    padding-bottom: 40px;
+    margin-top: 40px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+}
+
+.menu-item-graphic p {
+    padding: 0 40px 0 0;
+    font-size: 60px;
+}
+
+.menu-item-details {
+    display: flex;
+}
+
+.add-item-btn {
+
+}
+
+.remove-item-btn {
+    font-size: 10px;
+    color: white;
+}
+
+input[type=button] {
+    background: none;
+    margin: 0;
+    border: solid #DEDEDE;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+.form-btn {
+    margin: 20px 0;
+    padding: 10px 0;
+    width: 100%;
+    background: #16DB99;
+    border: none;
+    color: #FFFFFF;
+}
+
+.escape-btn {
+    margin: 10px;
+    border: none;
+    background: none;
+    color: #DEDEDE;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.selected-item input[type=button] {
+    border: none;
+    color: #BBBBBB;
+}
+
+.order-section {
+    text-align: center; 
+}
+
+.order-header {
+    margin: 40px 0; 
+}
+
+.order-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.selected-item {
+    display: flex;
+}
+
+.order-complete-section {
+    padding: 20px;
+    text-align: center;
+    background: #ECFDF5;
+    color: #065F46;
+}
+
+.divider {
+    border-bottom: solid #D2D2D2;
+}
+
+.hidden {
+    display: none;
+}
+

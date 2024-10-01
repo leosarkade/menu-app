@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <container class="header-text">
+                <h1>Jimmy's Diner</h1>
+                <h2>The best burgers and pizzas in town</h2>
+            </container>
+        </header>
+        <main id="main">
+            <form id="order-form">            
+                <section id="menu-section">
+                        <ul id="menu-items"></ul>
+                </section>
+                <section class="order-section hidden" id="order-section">
+                    <div class="order-header">
+                        <h2>Your order</h2>
+                    </div>
+                    <ul id='order-items'></ul>
+                    <div class="divider"></div>
+                    <div class="order-row">
+                        <h3>Total Price:</h3>
+                        <h3 id="order-total">$0</h3>
+                    </div>
+                    <button type="button" class="form-btn" id="complete-btn">Complete order</button>
+                </section>
+                <section class="hidden" id="order-complete-section">
+                </section>
+
+                <container class="card-details-container hidden" id="card-details-container">
+
+                        <div class="card-details-header">
+                            <button class="escape-btn" id="card-details-escape-btn">X</button>
+                            <h2>Enter card details</h2>
+                        </div>
+                        <input 
+                            type="text" 
+                            placeholder="Enter your name"
+                            id='customer-name'
+                            name='customerName'
+                            pattern="[A-Za-z]{3,30}"
+                            required></input>
+                        <input 
+                            type="number" 
+                            placeholder="Enter card number"
+                            name='customerCardNumber'
+                            required></input>
+                        <input 
+                            type="number"
+                            placeholder="Enter CVV"
+                            name='customerCVV'
+                            required></input>
+                        <button
+                            type="submit"
+                            class="form-btn"
+                            id="pay-btn">Pay</button>
+                </container>
+            </form>        
+        </main>
+        
+        
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
